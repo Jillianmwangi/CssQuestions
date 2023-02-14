@@ -1,41 +1,91 @@
-*
-{padding: 0px;
-margin:0px;
-box-sizing: border-box;}
-
-body{display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+*{
+    box-sizing: border-box;
 }
-
-
-.intro{
+body{
+    background-color: bisque;
+}
+.container{
+  
+  justify-content: center;
+  width: 60%;
+  height: 400px;
+  background-color: rgb(84, 6, 80);
+  border-radius: 30px;
+  margin: auto;
+  width: 50vw;
+}
+.header{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: beige;
-    
-}
-.head{
-    color: orange;
-    font-size: 40px;
-    font-weight: 500px;
-}
-.sub{
-    color: black;
-    font-size: larger;
-    font-weight: 500px;
-    
-}
-.image img{
-    padding: 10px;
+    flex-direction: row;
     margin: 20px;
+    padding: 10px;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 20px;
+    font-size: 1rem;
+}
+.headtext{
+    font-size: 15px;
+}
+span{
+ color: pink;
+ font-size: 8px;
+}
+#navlinks{
+  display: flex;
+  flex-direction: row;
+  color: whitesmoke;
+  list-style: none;
+  gap: 10px;
+}
+#btnhold{
     display: flex;
     justify-content: center;
+    /* justify-items: center; */
     align-items: center;
-    height: 600px;
-    width: 600px;
- 
+    /* align-content: center; */
+    background-color: yellow;
+}
+#btn{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color:peru;
+    width: 70px;
+    height: 10vh;
+    margin: 20px;
+}
+#btn:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
+.boxdivs{
+    display: block;
+    margin-top: 20px;
+}
+.fakebox1, .fakebox2, .fakebox3{
+    border-style: solid;
+    border-color: black;
+    color: black;
+    position: absolute;
+}
+.fakebox1{
+  background-color: pink;
+  z-index: 3;
+  width: 35px;
+  height: 35px;
+}
+.fakebox2{
+    background-color: orangered;
+    z-index: 2;
+    width: 55px;
+    height: 55px;
+
+}
+.fakebox3{
+    background-color: green;
+    z-index: 1;
+    width: 65px;
+    height: 65px;
 }

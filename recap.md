@@ -18,17 +18,32 @@ Selectors are the patterns used to select elements that are to be styled. Eg:
 •	global selectors-uses an asterisk (*). selects all elements
 
 
+
+
+
     //number3
 VH/VW in CSS
 The viewport in css is the visible area on the browser page. Setting an element to 100vh means it will occupy the full height of the browser.
+the value of 1vw is the same as 1% of the full view width
+
+
+
+
+
+
+
+
 
     //number4
 Inline-block, inline, block
 inline- elements dont start on new line and only occupies required width.you cant set width or height.
+eg the <span>, <br>
 inline- block-  allows us to set width and height.
 diff w block is that it doesnt add a br after the element.
+eg <button>, <input>
 common use for this is to display list items horizontally eg navlinks.
 Block- Elements begin on a new line . Takes up full width.
+eg <div> <p>
 
     //number5
 Pseudo-classes
@@ -54,8 +69,17 @@ Rem unit (Rootem) it is works like em except it ignores any inherited font sizes
 
     //number7
 border box vs content box
-content box- content inside of element will have the same as the element.
-border box- the content dimension has to subtract the border and padding from the element's dimension.  
+content box- content inside of element will have the same as the element.Width and height can be calculated based on its content only. Any padding or border added to the element will increase the overall size of the element.
+
+border box- the content dimension has to subtract the border and padding from the element's dimension.
+Even when padding and margin is added, the width of the container remains the same
+   * {
+  box-sizing: border-box;
+}
+.my-element {
+  box-sizing: content-box;
+}
+
 
 
     //number8
